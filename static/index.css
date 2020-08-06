@@ -1,0 +1,154 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: Arial;
+    cursor:context-menu;
+    user-select: none;
+}
+body{
+    background-color:#cccccc;
+}
+#title {
+    height:100px;
+    background-color: cornflowerblue;
+    opacity: 0.8;
+}
+#title h1{
+    position: relative;
+    width:200px;
+    height:50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#choice{
+    height:50px;
+    background-color: #bbbbbb;
+}
+#choice>ul{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+#choice>ul>li{
+    margin:10px;
+    color:wheat;
+    padding:5px;
+    border-radius: 3px;
+    background-color:blueviolet;
+    opacity: 0.5;
+}
+#choice>ul>li:hover{
+    opacity: 1;
+    cursor:pointer;
+}
+.page{
+    height: 500px;
+    margin:50px;
+    border-radius: 5px;
+    background-color: aliceblue;
+    opacity: 0.8;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+.page>h2{
+    height: 10%;
+    padding: 5px;
+    margin-top:10px;
+}
+.page>button{
+    height: 35px;
+    width:120px;
+    background-color: darkmagenta;
+    border:none;
+    cursor:pointer;
+    color:wheat;
+    border-radius: 3px;
+    font-size:16px;
+    outline:none;
+}
+.page>button:hover{
+    color:white;
+}
+.page>span{
+    width:80%;
+    height:30%;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.page>span>p{
+    width:30%;
+    height:80%;
+    position: relative;
+}
+.page>span>p>p{
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.page>span>textarea{
+    outline:none;
+    font-size:16px;
+    line-height: 24px;
+    width:70%;
+    height:80%;
+    background-color:#f0f0f0;
+    resize:none;
+}
+.page>span>button{
+    width:50px;
+    height:30px;
+    border-radius: 15px;
+    outline:none;
+    cursor:pointer;
+}
+#home>span>span{
+    width:70%;
+    height: 30%;
+    margin-bottom: 80px;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    background-color: blanchedalmond;
+}
+#home>span>button{
+    margin-bottom: 80px;
+}
+#transaction>button{
+    margin-bottom: 30px;
+}
+#mine>button{
+    background-color:cyan;
+    width :80px;
+    height:80px;
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+}
+#mine>button:hover{
+    box-shadow:5px 5px 10px blueviolet;
+}
+#mine>div{
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    height: 40%;
+    width:80%;
+    margin-bottom: 30px;
+    display:flex;
+    align-items:center;
+    flex-direction: column;
+}
+#mine>div>span{
+    margin:10px;
+    padding:10px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: darkkhaki;
+}

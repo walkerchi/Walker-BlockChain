@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walker's Coin</title>
+    <link rel='stylesheet' href='index.css'>
+</head>
+<body oncontextmenu="return false">
+    <div id='title'>
+        <h1>Walker's&nbsp;ICO</h1>
+    </div>
+    <div id='choice'>
+        <ul>
+            <li id='choice0'>home</li>
+            <li id='choice1'>create wallet</li>
+            <li id='choice2'>transaction</li>
+            <li id='choice3'>mining</li>
+            <li id='choice4'>add nodes</li>
+        </ul>
+    </div>
+    <div id='home' class='page'>
+        <h2>Welcome Home</h2>
+        <span>
+            <p>Your address:</p>
+            <span id='homeAddress'></span>
+            <button id='homeAddressCopy' data-clipboard-target='#homeAddress'>Copy</button>
+        </span>
+        <span>
+            <p>Your amount:</p>
+            <span id='homeAmount'></span>
+            <button id='homeAmountRenew'>renew</button>
+        </span>
+    </div>
+    <div id='wallet' class='page'>
+        <h2>Create Your Wallet</h2>
+        <button>CreateWallet</button>
+        <span id='walletPublicKey'>
+            <p>public key:</p>
+            <textarea readonly  placeholder="public key"></textarea>
+            <button>copy</button>
+        </span>
+        <span id='walletPrivateKey'>
+            <p>private key:</p>
+            <textarea readonly  placeholder="private key"></textarea>
+            <button>copy</button>
+        </span>
+    </div>
+    <div id='transaction' class='page'>
+        <h2>Send Coins</h2>
+        <span id='transactionSenderAddress'>
+            <p>sender address:</p>
+            <textarea readonly placeholder="input your address"></textarea>
+        </span>
+        <span id='transactionSenderPrivateKey'>
+            <p>sender private keys:</p>
+            <textarea placeholder="input your private key"></textarea>
+        </span>
+        <span id='transactionRecipientAddress'>
+            <p>recipient address:</p>
+            <textarea></textarea>
+        </span>
+        <span id='transactionAmount'>
+            <p>amount of coins:</p>
+            <textarea></textarea>
+        </span>
+        <button>
+            make a deal
+        </button>
+    </div>
+    <div id='mine' class='page'>
+        <h2>work for icon</h2>
+        <div>
+            <span id='mineIndex'><h3></h3></span>
+            <span id='mineProof'></span>
+            <span id='minePreviousHash'></span>
+        </div>
+        <button>mine</button>
+    </div>
+    <div id='nodes' class='page'>
+        <h2>add neighbors</h2>
+        <span>
+            <p>Nodes URLs:</p>
+            <textarea placeholder="www.baidu.com,168.192.0.2:9999"></textarea>
+        </span>
+        <button>add</button>
+    </div>
+    <script src='https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js'></script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src='index.js'></script>
+</body>
+</html>
