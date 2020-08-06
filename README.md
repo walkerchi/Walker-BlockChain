@@ -35,7 +35,7 @@ http://localhost:10000
 
 4.and you will get
 
-![img](E:\vscode_working_space\Python\learning\BlockChain\README.assets\20200806115916.png)
+![img](README.assets\20200806115916.png)
 
 
 
